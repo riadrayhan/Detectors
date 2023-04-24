@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".Speed">
+
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:background="#900"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#fff"
+        android:layout_height="wrap_content">
+    </DigitalClock>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="90dp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="@color/white"
+        android:text="Speed : 00 "
+        android:id="@+id/id_speedtext"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="@color/white"
+        android:text="Pace : 00 "
+        android:id="@+id/id_textview"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+
+    android:layout_width="320dp"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:textSize="12sp"
+    app:neumorph_shapeType="pressed"
+    app:neumorph_backgroundColor="@color/white"
+    android:text="Note: make sure your location connection \n ملاحظة: تأكد من اتصال موقعك"
+    android:textColor="#308d46"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif"
+    android:gravity="center"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7230640014460944/2879059567" />
+
+</LinearLayout>

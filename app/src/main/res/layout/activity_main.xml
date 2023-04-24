@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#2AACAFB3"
+    android:layout_height="match_parent"
+    tools:context="com.riad.detector_master.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/Button1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="14sp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Detect Everything as You Want"
+        android:textColor="#182671"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Metal Detector \n كاشف معادن"
+        android:id="@+id/id_metal"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center" />
+
+    <soup.neumorphism.NeumorphButton
+
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start"
+        android:textSize="14sp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Temperature Detector \n كاشف درجة الحرارة"
+        android:id="@+id/id_temperature"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:textSize="14sp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Sound Detector \n كاشف الصوت "
+        android:textColor="#308d46"
+        android:id="@+id/id_sound"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/id_step"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start"
+        android:textSize="14sp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Step Detector \n كاشف الخطوة"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:textSize="14sp"
+        app:neumorph_shapeType="pressed"
+        app:neumorph_backgroundColor="#4BFFFFFF"
+        android:text="Speed Meter \n سرعة"
+        android:id="@+id/id_speed"
+        android:textColor="#308d46"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+        <soup.neumorphism.NeumorphButton
+
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            android:textSize="14sp"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_backgroundColor="#4BFFFFFF"
+            android:text="Light Detector \n كاشف الضوء "
+            android:id="@+id/id_light"
+            android:textColor="#308d46"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"/>
+        <soup.neumorphism.NeumorphButton
+
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:textSize="14sp"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_backgroundColor="#4BFFFFFF"
+            android:text="Pressure Detector \n كاشف الضغط"
+            android:id="@+id/id_pressure"
+            android:textColor="#308d46"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7230640014460944/4861993561" />
+    </LinearLayout>
+</ScrollView>

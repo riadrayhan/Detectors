@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFE5E5"
+    android:layout_height="match_parent"
+    tools:context=".StepDetector">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:id="@+id/id_gif2"
+        android:background="@drawable/walk"
+        android:layout_height="300dp">
+    </pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/id_textview"
+        android:textColor="#900"
+        android:textSize="24dp"
+        android:text="Total Step : "
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/retry_button"
+        android:text="Retry"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</LinearLayout>

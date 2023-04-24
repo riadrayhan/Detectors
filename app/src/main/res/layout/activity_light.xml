@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#242735"
+    android:layout_height="match_parent"
+    tools:context=".Light">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="160dp"
+        android:layout_gravity="center"
+        android:padding="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/light"
+        android:layout_height="250dp">
+    </pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor output"
+        android:padding="30dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:id="@+id/textViewSensorOutput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+</LinearLayout>
